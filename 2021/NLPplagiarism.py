@@ -55,7 +55,5 @@ for i in range(3):
     soup = BeautifulSoup(r.content, features="lxml")
     searched_info.append(soup.get_text().rstrip("\n"))
 
-print(searched_info)
-print(len(searched_info))
 # 3. TODO: Find similarity(plagiarism pourcentage) by comparing the 'suspicious' text to all 5 results
 # 4. TODO: Get average of all similiarity pourcentages as final number
